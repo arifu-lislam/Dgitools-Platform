@@ -5,9 +5,9 @@ const AvailableCards = ({ products }) => {
   //   console.log(products);
   return (
     <div className="grid grid-cols-3 mt-20">
-      {products.map((product) => {
+      {products.map((product, index) => {
         return (
-          <div className="card w-96 bg-base-100 shadow-sm mb-12">
+          <div key={index} className="card w-96 bg-base-100 shadow-sm mb-12">
             <div className="card-body">
               <div className="relative">
                 <span className="badge badge-warning rounded-full absolute -top-6 -right-3">

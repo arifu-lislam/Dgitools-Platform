@@ -1,9 +1,11 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import AvailableCards from "./AvailableCards/AvailableCards";
 
 const Products = ({ fetchPromise }) => {
   const products = use(fetchPromise);
   //   console.log(products, "products");
+  const [changeState, setChangeState] = useState("products");
+  console.log(changeState, "changeState");
   return (
     <div className="mt-[120px] font-family w-9/12 mx-auto">
       <div className="space-y-4 text-center">
@@ -13,8 +15,18 @@ const Products = ({ fetchPromise }) => {
           designed to boost your productivity and creativity.
         </p>
         <div>
-          <button className="btn btn-primary rounded-full">Products</button>
-          <button className="btn rounded-full">Cart(2)</button>
+          <button
+            onClick={() => setChangeState("products")}
+            className={`btn ${changeState === "products" ? "bg-blue-500" : ""} rounded-full `}
+          >
+            Products
+          </button>
+          <button
+            onClick={() => setChangeState("cart")}
+            className={`btn rounded-full ${changeState === "cart" ? "bg-blue-500" : ""}`}
+          >
+            Cart(2)
+          </button>
         </div>
       </div>
       <AvailableCards products={products}></AvailableCards>
