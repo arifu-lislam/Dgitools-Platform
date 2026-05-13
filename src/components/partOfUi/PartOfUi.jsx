@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FeaturesList from "../HomePage/Products/AvailableCards/FeaturesList";
+import { toast } from "react-toastify";
 
 const PartOfUi = ({ product, selectedCart, setSelectedCart }) => {
   const [selected, setSelected] = useState(false);
@@ -7,6 +8,7 @@ const PartOfUi = ({ product, selectedCart, setSelectedCart }) => {
     setSelected(true);
     // console.log(product, "product");
     setSelectedCart([...selectedCart, product]);
+    toast(`${product.name} is select`);
   };
   return (
     <div className="card w-96 bg-base-100 shadow-sm mb-12">
