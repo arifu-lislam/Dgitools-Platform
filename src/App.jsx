@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Banner from "./components/HomePage/Banner/Banner";
 import Products from "./components/HomePage/Products/Products";
@@ -11,6 +11,7 @@ const fetchProduct = async () => {
 
 function App() {
   const fetchPromise = fetchProduct();
+  const [cart, setCart] = useState(0);
   return (
     <>
       <Navbar></Navbar>

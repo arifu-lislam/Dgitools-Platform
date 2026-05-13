@@ -1,11 +1,13 @@
 import React, { use, useState } from "react";
 import AvailableCards from "./AvailableCards/AvailableCards";
+import AddedCart from "./AddedCart/AddedCart";
 
 const Products = ({ fetchPromise }) => {
   const products = use(fetchPromise);
   //   console.log(products, "products");
   const [changeState, setChangeState] = useState("products");
-  console.log(changeState, "changeState");
+  //   console.log(changeState, "changeState");
+  const [selectedCart, setSelectedCart] = useState([]);
   return (
     <div className="mt-[120px] font-family w-9/12 mx-auto">
       <div className="space-y-4 text-center">
@@ -25,11 +27,22 @@ const Products = ({ fetchPromise }) => {
             onClick={() => setChangeState("cart")}
             className={`btn rounded-full ${changeState === "cart" ? "bg-blue-500" : ""}`}
           >
-            Cart(2)
+            Cart({selectedCart.length})
           </button>
         </div>
       </div>
-      <AvailableCards products={products}></AvailableCards>
+      {changeState === "products" ? (
+        <AvailableCards
+          products={products}
+          selectedCart={selectedCart}
+          setSelectedCart={setSelectedCart}
+        ></AvailableCards>
+      ) : (
+        <AddedCart
+          selectedCart={selectedCart}
+          setSelectedCart={setSelectedCart}
+        ></AddedCart>
+      )}
     </div>
   );
 };
