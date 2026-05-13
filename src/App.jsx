@@ -12,7 +12,7 @@ const fetchProduct = async () => {
 
 function App() {
   const fetchPromise = fetchProduct();
-  const [cart, setCart] = useState(0);
+  // const [cart, setCart] = useState(0);
   return (
     <>
       <Navbar></Navbar>
