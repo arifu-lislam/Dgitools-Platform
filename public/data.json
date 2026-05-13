@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "description": "Comfortable wireless mouse for daily computer use.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "2.4GHz connectivity",
+      "Ergonomic design",
+      "Battery included",
+      "Silent click"
+    ],
+    "icon": "https://i.ibb.co.com/9HzNRpJ8/Silent-Click-Mouse-Wireless-Mini-Portable-Mouse-2-4-G-Optical-Mouse-for-Laptop-PC-Mac-Black-c8fa8d4a.avif"
+  },
+  {
+    "id": 2,
+    "name": "Smart Water Bottle",
+    "description": "Track your daily water intake with smart reminders.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Temperature display",
+      "Hydration reminder",
+      "Leak proof",
+      "USB charging"
+    ],
+    "icon": "https://i.ibb.co.com/xSvxbywJ/3493e5c7716645e6781cf921667fcab5.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "description": "Portable speaker with high-quality sound.",
+    "price": 45,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "10 hours battery",
+      "Water resistant",
+      "Deep bass",
+      "Bluetooth 5.0"
+    ],
+    "icon": "https://i.ibb.co.com/LzH4LCWV/dc1c8d4ffaa384e5fa3e200a06ac1097-jpg-960x960q80-jpg.webp"
+  },
+  {
+    "id": 4,
+    "name": "Office Chair",
+    "description": "Ergonomic chair for comfortable working sessions.",
+    "price": 120,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Adjustable height",
+      "Lumbar support",
+      "Breathable mesh",
+      "360° rotation"
+    ],
+    "icon": "https://i.ibb.co.com/gLcB4qbS/S9ecd5b94430141a6a9ff30bc80a212e7f-jpg-720x720q80.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mechanical Keyboard",
+    "description": "RGB mechanical keyboard for typing and gaming.",
+    "price": 70,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "RGB lighting",
+      "Blue switches",
+      "USB-C connection",
+      "Durable keycaps"
+    ],
+    "icon": "https://i.ibb.co.com/G3RV881S/7a31f1daf24a4327150ddf06f6fe59fd-jpg-720x720q80.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Smart Watch",
+    "description": "Fitness and notification tracking smartwatch.",
+    "price": 95,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Heart rate monitor",
+      "Sleep tracking",
+      "Call notifications",
+      "5-day battery life"
+    ],
+    "icon": "https://i.ibb.co.com/jkBFByT4/e13046489f6a67490e1c4f77025af578-jpg-720x720q80.jpg"
+  }
+]
