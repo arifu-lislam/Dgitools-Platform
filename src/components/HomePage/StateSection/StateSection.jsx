@@ -3,7 +3,7 @@ import React from "react";
 const StateSection = () => {
   return (
     <div className="mt-[85px] font-family bg-[#4F39F6] py-12">
-      <div className=" text-white flex justify-around ">
+      <div className=" text-white grid grid-cols-1 text-center  lg:grid-cols-3 gap-80 w-9/12 mx-auto">
         <div>
           <h2 className="text-5xl font-bold mb-5">50K+</h2>
           <p>Active Users</p>

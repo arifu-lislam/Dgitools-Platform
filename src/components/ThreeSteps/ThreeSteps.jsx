@@ -18,7 +18,7 @@ const ThreeSteps = () => {
             Start using premium digital tools in minutes, not hours.
           </p>
         </div>
-        <div className="w-9/12 mx-auto grid grid-cols-3 gap-10 mt-20">
+        <div className="w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
           <div>
             <div className="relative">
               <img src={frame1} alt="" className="absolute top-6 right-0" />

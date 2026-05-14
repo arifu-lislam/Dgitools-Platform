@@ -5,7 +5,7 @@ import { FaFacebook, FaGoogle, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-black  mt-20">
-      <div className="w-9/12 mx-auto pt-[120px] grid grid-cols-5  pb-[120px]">
+      <div className="w-9/12 mx-auto pt-[120px] grid  grid-cols-2 gap-20 md:grid-cols-3 lg:grid-cols-5  pb-[120px]">
         <div>
           <img src={digitool} alt="" />
           <p className="text-white mt-3">
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-9/12 h-[1px] bg-white  mx-auto -mt-20"></div>
-      <div className="flex justify-between items-center w-9/12 mx-auto pb-20 mt-3">
+      <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center w-9/12 mx-auto pb-20 mt-3">
         <div>
           <p className="text-white">© 2026 Digitools. All rights reserved.</p>
         </div>
