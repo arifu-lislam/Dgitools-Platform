@@ -5,6 +5,7 @@ import Products from "./components/HomePage/Products/Products";
 import StateSection from "./components/HomePage/StateSection/StateSection";
 import Navbar from "./components/Navbar/Navbar";
 import { ToastContainer } from "react-toastify";
+import ThreeSteps from "./components/ThreeSteps/ThreeSteps";
 const fetchProduct = async () => {
   const res = await fetch("/data.json");
   return res.json();
@@ -25,6 +26,7 @@ function App() {
       </Suspense>
 
       <ToastContainer />
+      <ThreeSteps></ThreeSteps>
     </>
   );
 }

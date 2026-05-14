@@ -11,7 +11,7 @@ const PartOfUi = ({ product, selectedCart, setSelectedCart }) => {
     toast(`${product.name} is select`);
   };
   return (
-    <div className="card w-96 bg-base-100 shadow-sm mb-12">
+    <div className="card  bg-base-100 shadow-sm mb-12">
       <div className="card-body">
         <div className="relative">
           <span className="badge badge-warning rounded-full absolute -top-6 -right-3">

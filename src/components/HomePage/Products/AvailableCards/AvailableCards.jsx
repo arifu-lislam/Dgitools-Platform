@@ -4,7 +4,7 @@ import PartOfUi from "../../../partOfUi/PartOfUi";
 const AvailableCards = ({ products, selectedCart, setSelectedCart }) => {
   //   console.log(products);
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-20">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-20 gap-5">
       {products.map((product, index) => {
         return (
           <PartOfUi
