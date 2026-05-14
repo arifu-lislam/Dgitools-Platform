@@ -6,6 +6,9 @@ import StateSection from "./components/HomePage/StateSection/StateSection";
 import Navbar from "./components/Navbar/Navbar";
 import { ToastContainer } from "react-toastify";
 import ThreeSteps from "./components/ThreeSteps/ThreeSteps";
+import PrisingCard from "./components/TransparentPrising/PrisingCard";
+import Footer from "./components/Footer/Footer";
+
 const fetchProduct = async () => {
   const res = await fetch("/data.json");
   return res.json();
@@ -27,6 +30,8 @@ function App() {
 
       <ToastContainer />
       <ThreeSteps></ThreeSteps>
+      <PrisingCard></PrisingCard>
+      <Footer></Footer>
     </>
   );
 }
